@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JAVASCRIPT STRİNG,SAYI,DİZİ,DİZİ ve İŞLEMLERİ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/css-alt-sayfalar.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="#">JavaScript</a></div>
+</header>
+
+<!-- Main -->
+<section id="main">
+    <div class="inner">
+
+        <!-- One -->
+        <section id="one" class="wrapper style1">
+
+            <header class="special">
+                <h2>Stringler,Sayılar,Dizi ve Dizi İşlemleri</h2>
+            </header>
+            <div class="content">
+                <h3 align="center">Stringler</h3>
+                <p>Stringler, tırnak içerisinde yazılırlar. Tek veya çift tırnak kullanılabilir javascript bu konu da çok katı değildir.</p>
+                <p>Örnek string tanımlaması:</p>
+                <p style="background-color: antiquewhite">var carName="Volvo XC60";<br>
+                </p>
+                <h4>String Length:</h4>
+                <p>"lenght" anahtar kelimesi tanımladığımız stringlerin boyutunu verir bize. Aşağıdaki örnek biraz daha açıklayıcı olabilir;</p>
+                <p style="background-color: antiquewhite">var txt="Morning";<br>
+                var boyut=txt.length;</p>
+                <h4>Özel Karakterler:</h4>
+                <p>Bir stringe atadığınız değer içinde " veya ' gibi özel karakterler varsa bu JavaScript tarafından yanlış anlaşılabilir.</p>
+                <p>Bildiğiniz gibi JavaScript'de  " ve '  karakterleri string değişkene veri atarken kullanılan karakterlerdir.</p>
+                <p>Bu tür bir sorun ile karşılaşmamak için eğer metnin içinde " veya ' karakterleri varsa başına \ karakteri
+                    koyarak bunun metnin bir parçası olduğunu JavaScript'e bildiririz.</p>
+                <p><strong>\</strong> karakteri JavaScript'te <u>Kaçış Karakteri</u> olarak adlandırılır.</p>
+                <h4>String Metodları:</h4>
+                <p><strong>LastIndexOf () </strong> yöntemi, bir dizede belirtilen bir metnin son tekrarlama dizinini döndürür:</p>
+                <p style="background-color: antiquewhite">var str= "Please locate where 'locate' occurs!";<br>
+                    var pos = str.lastIndexOf("locate");</p>
+                <p>Metin bulunmazsa hem indexOf () hem de lastIndexOf () -1 döndürür. Her iki yöntem de, aramanın başlangıç konumu olarak ikinci bir parametreyi kabul eder:</p>
+                <p>LastIndexOf () yöntemleri geriye doğru (uçtan başa doğru) arama yapar, yani: ikinci parametre 15 ise, arama 15 konumunda başlar ve dizenin başlangıcını arar.Örneğin;</p>
+                <p><strong>Search ()</strong> yöntemi, bir dizeyi belirli bir değer arar ve eşleşmenin konumunu döndürür:</p>
+                <p style="background-color: antiquewhite">var str= "Please locate where 'locate' occurs!";<br>
+                    var pos = str.search("locate");</p>
+                <h4>String Parçalarını Çıkarma:</h4>
+                <p>Bir dizenin bir kısmını çıkarmak için 3 yöntem vardır:</p>
+                <p style="background-color: antiquewhite">
+                    <ul>
+                    <li>
+                        slice(start,end)
+                    </li>
+                    <li>
+                        substring(start,end)
+                    </li>
+                    <li>
+                        substr(start,length)
+                    </li>
+                    </ul>
+                </p>
+                <h4>Büyük ve Küçük Harfe Dönüştürme:</h4>
+                <p>Bir dize, <strong>toUpperCase ()</strong> ile büyük harfe dönüştürülür:</p>
+                <p style="background-color: antiquewhite">var text1 = "Hello World!";<br>
+                    var text2 = text1.toUpperCase();</p>
+                <p>Bir dize <strong>toLowerCase ()</strong> ile küçük harfe dönüştürülür:</p>
+                <p style="background-color: antiquewhite">var text1 = "Hello World!";<br>
+                    var text2 = text1.toLowerCase();</p>
+                <h4>String.trim() Method:</h4>
+                <p><strong>Trim ()</strong> yöntemi, boşluğu bir dizenin her iki tarafından kaldırır:</p>
+                <p style="background-color: antiquewhite">var str = "       Hello World!        ";<br>
+                    alert(str.trim());</p>
+                <h4>charAt() Method:</h4>
+                <p><strong>CharAt ()</strong> yöntemi, bir dizede belirtilen bir dizindeki (konum) karakteri döndürür:</p>
+                <p style="background-color: antiquewhite">var str = "HELLO WORLD";<br>
+                    str.charAt(0);</p>
+                <h4>CharCodeAt () Method</h4>
+                <p><strong>CharCodeAt ()</strong> yöntemi, bir dizede belirtilen dizindeki karakterin unicode değerini döndürür:</p>
+                <p style="background-color: antiquewhite">var str = "HELLO WORLD";<br>
+                    str.charCodeAt(0); </p>
+                <h4>Split() Method</h4>
+                <p>Bir dize,<strong> split ()</strong> yöntemiyle bir diziye dönüştürülebilir:</p>
+                <p style="background-color: antiquewhite">var txt = "a,b,c,d,e";<br>
+                    txt.split(",");<br>
+                    txt.split(" ");<br>
+                    txt.split("|");
+                </p>
+                <h3 align="center">Sayılar</h3>
+                <p>Sayılar ondalıklı veya ondalıksız olarak yazılabilir.</p>
+                <p style="background-color: antiquewhite">var x = 3.14; // kayan noktalı sayı<br>
+                    var y = 3; // tam sayı </p>
+                <p>Çok büyük veya çok küçük sayılar exponent (üslü) gösterimle yazılabilir:</p>
+                <p style="background-color: antiquewhite">var x = 123e5; // 12300000<br>
+                    var y = 123e-5; // 0.00123
+                </p>
+                <h4>Sayı ve Dize Toplama:</h4>
+                <p><strong>DİKKAT!</strong><br>
+                    "+" hem toplama hem de birleştirme için operatörü kullanılır.<br>
+                    Sayılar eklenir. Dizeler birleştirilir.</p>
+                <p style="background-color: antiquewhite">var x = 10;<br>
+                    var y = 20;<br>
+                    var z = x + y; // z=30
+                </p>
+                <p style="background-color: antiquewhite">var x = "10";<br>
+                    var y = "20";<br>
+                    var z = x + y; // z=1020 (string)
+                </p>
+                <h4>Sayı Metodları:</h4>
+                <h4>Exponential() Method:</h4>
+                <p><strong>toExponential ()</strong>, üstel gösterim kullanılarak yuvarlanmış ve yazılmış bir sayı içeren bir dize döndürür.</p>
+                <h4>toFixed() Method:</h4>
+                <p><strong>toFixed ()</strong>, belirtilen sayıda ondalık sayı ile yazılmış bir dize döndürür:</p>
+                <h4>toPrecision() Method:</h4>
+                <p><strong>toPrecision ()</strong>, belirtilen uzunlukta bir sayı yazılan bir dize döndürür:</p>
+                <h4>valueOf() Method:</h4>
+                <p><strong>valueOf ()</strong>, bir sayıyı sayı olarak döndürür.</p>
+                <h4>Değişkenleri Sayılara Dönüştürme</h4>
+                <p>Değişkenleri sayılara dönüştürmek için kullanılabilecek 3 JavaScript yöntemi vardır:</p>
+                <ul>
+                    <li>
+                        Number() method
+                    </li>
+                    <li>
+                        parseInt() method
+                    </li>
+                    <li>
+                        parseFloat() method
+                    </li>
+                </ul>
+
+
+            </div>
+        </section>
+
+
+
+</body>
+</html>

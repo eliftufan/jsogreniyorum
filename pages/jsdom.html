@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JAVASCRIPT_DOM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/css-alt-sayfalar.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="#">JavaScript</a></div>
+</header>
+
+<!-- Main -->
+<section id="main">
+    <div class="inner">
+
+        <!-- One -->
+        <section id="one" class="wrapper style1">
+
+            <header class="special">
+                <h2>Javascript DOM (Document Object Model)</h2>
+            </header>
+            <div class="content">
+                <p>DOM Document Object Model kelimesinin kısaltılmasından gelir ve Türkçe karşılığı Belge Nesne Modelidir.</p>
+                <p>DOM, HTML, XML gibi belgelerin diğer programlama dilleri veya script dilleriyle iletişim kurabilmesini sağlamak
+                    için geliştirilmiş bir arabirimdir.</p>
+                <img src="assets/dom.png">
+                <p>Yukarıdaki görselde olduğu gibi HTML sayfasında bulunan "head", "body", "h1", "img" gibi etiketler(tagler) birer DOM nesneleridir.</p>
+                <p>DOM sayesinde HTML veya XML elemanları ile programlama veya script dilleri arasında haberleşme sağlayarak daha etkileşimli web siteler
+                    yapılabilmesini sağlanır.</p>
+                <h4>DOM Metodları:</h4>
+                <p>DOM metodları, gerçekleştirebileceğimiz eylemlerdir.</p>
+                <h5>getElementedById Metodu:</h5>
+                <p>Bir HTML etiketine erişmek için kullanılan en sık metoddur.Etiketin <strong>id </strong> özelliğini kullanır.</p>
+                <h4>HTML Öğeleri Bulma</h4>
+                <ul>
+                    <li><p>document.<strong>getElementById</strong>(id):<strong>id</strong> niteliği ile eşleşen <strong>ilk</strong> kaydı getirir.</p></li>
+                    <li><p>document.<strong>getElementsByName</strong>(name):<strong>neme</strong> niteliği ile eşleşen <strong>tüm</strong> kayıtları dizi olarak getirir.</p></li>
+                    <li><p>document.<strong>getElementsByTagName</strong>(etiketdı):<strong>etiket adı</strong> ile eşleşen <strong>tüm</strong> kayıtları dizi olarak getirir.</p></li>
+                    <li><p>document.<strong>getElementsByClassName</strong>(classAdı):<strong>class</strong> niteliği ile eşleşen <strong>tüm</strong> kayıtları dizi olarak
+                        getirir.</p></li>
+                    <li><p>document.<strong>querySelector</strong>(seçiçi):<strong>seçiçi</strong> ile eşleşen <strong>ilk</strong> kayıtları dizi olarak
+                        getirir.</p></li>
+                    <li><p>document.<strong>querySelectorAll</strong>(seçiçi):<strong>seçiçi</strong> ile eşleşen <strong>tüm</strong> kayıtları dizi olarak getirir.</p></li>
+                </ul>
+                <h4>HTML Etiketleri Düzenleme:</h4>
+                <ul>
+                    <li><p>etiket.<strong>innerHTML</strong>:Etiketin içini okuma ve değiştirme için kullanılır.</p></li>
+                    <li><p>etiket.<strong>attribute</strong>:Etiketin niteliğin değiştirmek için kullanılır.</p></li>
+                    <li><p>etiket.<strong>setAttribute(nitelik,değeri)</strong>:Etiketin niteliğini değiştirmek için kullanılır.</p></li>
+                    <li><p>etiket.<strong>style.property</strong>:Etiketin stilini değiştirmek için kullanılır.</p></li>
+                    <li><p>etiket.<strong>classList</strong>:Etiketlerin class niteliği üzerinde silme,değiştirme,ekleme,class listesini öğrenme
+                    gibi işlemleri yapmak için kullanılır.</p></li>
+                </ul>
+                <h4>HTML Etiketi Ekleme ve Silme:</h4>
+                <ul>
+                    <li><p>document.<strong>createElement</strong>(element):HTML etiketi oluşturma.</p></li>
+                    <li><p>document.<strong>removeChild</strong> (element):HTML etiketi silme.</p></li>
+                    <li><p>document.<strong>appendChild</strong>(element):HTML etiketi ekleme.</p></li>
+                    <li><p>document.<strong>replaceChild</strong>(element):HTML etiketini değiştirme.</p></li>
+                </ul>
+
+
+
+
+
+            </div>
+        </section>
+    </div>
+</section>
+</body>
+</html>

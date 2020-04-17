@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JAVASCRIPT OBJECT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/css-alt-sayfalar.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="#">JavaScript</a></div>
+</header>
+
+<!-- Main -->
+<section id="main">
+    <div class="inner">
+
+        <!-- One -->
+        <section id="one" class="wrapper style1">
+
+            <header class="special">
+                <h2>Objects(Nesneler)</h2>
+            </header>
+            <div class="content">
+                <p>JavaScript'te neredeyse "her şey" bir nesnedir.</p>
+                <p>Boole nesneleri nesne olabilir. Sayılar nesne olabilir. Dizeler nesne olabilir. Tarihler her zaman nesnedir. Matematik her zaman nesnedir.
+                    Düzenli ifadeler her zaman nesnedir. Diziler her zaman nesnedir. Fonksiyonlar her zaman nesnedir. Nesneler her zaman nesnedir.
+                    Temel öğeler dışındaki tüm JavaScript değerleri nesnedir.</p>
+                <h5>Nesneler,Değişkenlerdir.</h5>
+                <p>JavaScript değişkenleri tek değerler içerebilir:</p>
+                <p style="background-color: beige">var person = "Elif";</p>
+                <p>Nesneler birçok değerde içerebilir:</p>
+                <p style="background-color: beige">var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+                <h4>Nesne Yöntemleri</h4>
+                <p>Yöntemler, nesneler üzerinde gerçekleştirilebilecek eylemlerdir. JavaScript yöntemi, işlev tanımı içeren bir özelliktir.</p>
+                <h5><u><i>this</i></u> Anahtarı:</h5>
+                <p>Bir işlev tanımında, bu işlevin "sahibine" karşılık gelir.</p>
+                <h5>Nesne Yöntemlerine Erişim</h5>
+                <p>Bir nesne yöntemine aşağıdaki sözdizimiyle erişirsiniz:</p>
+                <p style="background-color: beige">objectName.methodName()</p>
+                <h5>Yerleşik Yöntemleri Kullanma</h5>
+                <p>Bu örnek, bir metni büyük harfe dönüştürmek için String nesnesinin toUpperCase () yöntemini kullanır:</p>
+                <p style="background-color: beige">var message = "Hello world!";<br>
+                    var x = message.toUpperCase();</p>
+                <h4>Javascript Nesne Özellikleri:</h4>
+                <p>Özellikler, bir JavaScript nesnesiyle ilişkili değerlerdir. JavaScript nesnesi, sıralanmamış özelliklerin bir koleksiyonudur.
+                    Özellikler genellikle değiştirilebilir, eklenebilir ve silinebilir, ancak bazıları salt okunurdur.</p>
+                <h5>JavaScript Özelliklerine Erişme</h5>
+                <p>Bir nesnenin özelliğine erişmek için sözdizimi:</p>
+                <p style="background-color: beige">objectName.property   // person.age</p>
+                <p>OR</p>
+                <p style="background-color: beige">objectName["property"]      // person["age"]</p>
+                <p>OR</p>
+                <p style="background-color: beige">objectName[expression]      // x = "age"; person[x]</p>
+                <h5>Yeni Özellik Ekleme:</h5>
+                <p>Mevcut bir nesneye basitçe bir değer vererek yeni özellikler ekleyebilirsiniz.</p>
+                <p style="background-color: beige">person.nationality = "English";</p>
+                <h5>Özellik Silme:</h5>
+                <p>Delete anahtar sözcüğü bir nesneden bir özelliği siler:</p>
+                <p style="background-color: beige">var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};<br>
+                    delete person.age;   // or delete person["age"];</p>
+                <p>Delete anahtar sözcüğü hem özelliğin değerini hem de özelliğin kendisini siler.Silindikten sonra, özellik tekrar geri eklenmeden önce kullanılamaz.</p>
+
+            </div>
+        </section>
+
+
+
+</body>
+</html>
