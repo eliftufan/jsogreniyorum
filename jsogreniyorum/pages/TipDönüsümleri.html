@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JAVASCRIPT TİP DÖNÜŞÜMLERİ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/css-alt-sayfalar.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="#">JavaScript</a></div>
+</header>
+
+<!-- Main -->
+<section id="main">
+    <div class="inner">
+
+        <!-- One -->
+        <section id="one" class="wrapper style1">
+
+            <header class="special">
+                <h2>Tip Dönüşümleri</h2>
+            </header>
+            <div class="content">
+                <p>Javascript dinamik bir dildir. Bunun anlamı, bir değişken tanımlanırken, veri tipini belirtme zorunluluğunun olmamasıdır.
+                    Bu da bir değişkenin veri tipinin kodun çalışması esnasında ihtiyaç olunan veri tipe otomatik dönüştürülmesi anlamına gelir.</p>
+                <h5>Başlıca Veri Tipleri Arasında Temel Dönüştürme İşlemleri</h5>
+                <ul>
+                    <li>
+                       <u>sayi.toString() :</u>
+                    </li>
+                    <p>Sayıyı String ifadeye çevirir (Number to String).</p>
+                    <li>
+                       <u>parseInt(string) :</u>
+                    </li>
+                    <p>String olarak gönderilen metinsel değeri sayıya çevirir. String ifadesinde ondalık sayi var ise onu siler (String to Number).</p>
+                    <li>
+                       <u>parseFloat(string):</u>
+                    </li>
+                    <p>String olarak gönderilen metinsel değeri sayayı çevirir. Ondalık ifade aynen döndürülür (String to Number).</p>
+                    <li>
+                       <u>array.toString():</u>
+                    </li>
+                    <p>Array olarak tanımlanan bir değişkeni string ifadeye çevirir (Array to String).</p>
+                    <li>
+                       <u>string.split(karakter):</u>
+                    </li>
+                    <p>String olarak tanımlanmış bir ifade belirtilen karakterin içindeki geçtiği yerlerden array ifadeye çevirir (String to Array).</p>
+                    <li>
+                       <u>json.stringify() :</u>
+                    </li>
+                    <p>Object olarak tanımlanan karakter veya sayısal nesneyi string ifadeye çevirir.</p>
+                    <li>
+                        <u>json.parse(string):</u>
+                    </li>
+                    <p>String olarak tanımlanan metinsel JSON değerleri JSON nesnesine çevirir.</p>
+                </ul>
+                <h5>Javascript typeof operatörü:</h5>
+                <p>Javascript değişken veri türünü öğrenmek için <strong>typeof</strong> operatörü kullanır.Örneğin;</p>
+                <p style="background-color: antiquewhite">alert(typeof "Elif");//"string"<br>
+                    alert(typeof new Date());//"object"<br>
+                    alert(typeof function() {});//"function"
+                </p>
+                <p><strong>Typeof</strong> operatörü dizi ve tarih veri türünü öğrenmek için kullanılmaz!</p>
+
+
+
+
+            </div>
+        </section>
+</body>
+</html>
