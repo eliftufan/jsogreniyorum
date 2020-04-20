@@ -40,7 +40,48 @@
                 <p>
                     "return" ifadeye ulaşıldığında , işlev yürütmeyi durdurur. Kaç defa tekrarlanacaksa o kadar tekrarlanır.
                 </p>
-
+                <p>Basit bir JavaScript fonksiyonu şöyle tanımlanabilir:</p>
+                <p style="background: antiquewhite">function selam() {<br>
+                    alert("Selam");<br>
+                    }</p>
+                <p>Bir fonksiyonu çağırmak için adını yazdıktan sonra eğer parametresi yoksa parantez açıp kapatarak çağırırız.Örneğin üstteki fonksiyonu şöyle çağırabiliriz.
+                </p>
+                <p style="background: antiquewhite">selam();</p>
+                <h5>Fonksiyona Parametre Gönderme:</h5>
+                <p>Fonksiyonlar 255 adede kadar parametre alabilirler. Fonksiyon parametreleri fonksiyon tanımında fonksiyon adından sonraki parantezlerin içinde birer isimle
+                    bildirilir ve birden çok parametre varsa aralarına virgül konur. Parametrelerde tip belirtilmez.</p>
+                <p>Parametre olarak verilen bir sayının karesini hesaplayıp çıktıya yazan bir fonksiyon şöyle yazılabilir:</p>
+                <p style="background: antiquewhite">function kare(sayi) {<br>
+                    console.log(sayi * sayi);<br>
+                    }</p>
+                <p>Bu fonksiyonu şöyle çağırabiliriz:</p>
+                <p style="background: antiquewhite">kare(5);</p>
+                <h5>Fonksiyonlardan Değer Döndürme:</h5>
+                <p>Fonksiyonlar, yaptıkları işlemlerin sonucunda bir değer döndürebilirler. Fonksiyondan değer döndürmek için <b>return</b> ifadesi kullanılır. Bu ifadenin yanına döndüreceği değer yazılır.
+                    Fonksiyonun döndürdüğü değer fonksiyon çağrısı kullanarak (örneğin <b>kare(5)</b> yazarak) bir işlemde kullanılabilir veya bir değişkene atanabilir.
+                </p>
+                <p>Bir sayının karesini hesaplayıp sonucu döndüren bir fonksiyon şöyle yazılabilir:</p>
+                <p style="background: antiquewhite">function kare(sayi) {<br>
+                    var karesi = sayi * sayi;<br>
+                    return karesi;<br>
+                    }</p>
+                <p>veya </p>
+                <p style="background: antiquewhite">function kare(sayi) {<br>
+                    return sayi * sayi;<br>
+                    }</p>
+                <p>Bu fonksiyonu diğer fonksiyonlar gibi parametreleri ile beraber adını yazarak çağırırız. Ancak farklı olarak bundan bir değer döneceğinden bu değeri bir yerlerde kullanabiliriz.</p>
+                <h5>Fonksiyon İçinde Fonksiyon Tanımlama:</h5>
+                <p>Bir fonksiyonun içinde fonksiyon tanımlanabilir. Ancak bu fonksiyonun referansı döndürülmediği sürece başka fonksiyonlar tarafından tanınmazlar.
+                    Sadece tanımlandığı fonksiyonun içinde kullanılabilirler.</p>
+                <p>Ornek:</p>
+                <p style="background: antiquewhite">function hipotenusHesapla(aKenari, bKenari) {<br>
+                    function sayininKaresi(s) {<br>
+                    return s * s;<br>
+                    }<br>
+                    return Math.sqrt(sayininKaresi(a) + sayininKaresi(b));<br>
+                    }<br>
+                    console.log(hipotenusHesapla(3, 2));</p>
+                <p>Örnekteki hipotenusHesapla fonksiyonunun içinde tanımlanan sayininKaresi fonksiyonu sadece hipotenusHesapla fonksiyonu içinden kullanılabilir.</p>
             </div>
         </section>
 
